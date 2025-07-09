@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <h2>TODO LIST</h2>
+        <div class="input_div">
+            <div class="inputarea">
+                <input id="searchTask" type="text" placeholder="Search note..."></input>
+                <img src="./icons/search.png" />
+            </div>
+            <div class="modeToogle"><img src="" /></div>
+        </div>
+
+        <div id="taskList">
+            <div class="listItems">
+                <input type="checkbox"></input>
+                <p>Task1</p>
+            </div>
+             <div class="listItems">
+                <input type="checkbox"></input>
+                <p>Task1</p>
+            </div>
+        </div>
+
+        <img id="addTask" onclick="addWindowToggle()" src="./icons/plus (1).png" />
+    </div>
+
+    <div id="addTaskWindow">
+        <input id="newTaskInput" type="text" placeholder="Input your note..."></input>
+        <div id="buttons">
+            <button onclick="cancel()">Cancel</button>
+            <button onclick="addTaskButton()">Apply</button>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

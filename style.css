@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: #ffffff;
+    color: #000;
+}
+
+.input_div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.inputarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 3%;
+    padding: 5px;
+    border: 1px solid #1470bb;
+    border-radius: 5px;
+}
+
+#searchTask {
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.inputarea img:hover {
+    cursor: pointer;
+}
+
+.modeToogle {
+    background-color: #1470bb;
+    border-radius: 10%;
+    margin: 3%;
+    height: 100%px;
+    width: 60px;
+}
+
+#taskList {
+    position: relative;
+    margin: 2%;
+    width: 50%;
+}
+
+.listItems {
+    display: flex;
+    margin: 2% 0;
+    font-size: 25px;
+    background: #727272;
+}
+
+#addTask {
+    position: sticky;
+    left: 80%;
+    top: 80%;
+    padding: 20px;
+    height: 50px;
+}
+
+
+#addTaskWindow {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    left: 40%;
+    height: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
