@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
+
 
 .main {
     display: flex;
@@ -10,8 +12,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background: #ffffff;
-    color: #000;
+    filter: blur(0px);
 }
 
 .input_div {
@@ -54,16 +55,27 @@ body {
 }
 
 #taskList {
-    position: relative;
-    margin: 2%;
     width: 50%;
 }
 
-.listItems {
-    display: flex;
-    margin: 2% 0;
-    font-size: 25px;
-    background: #727272;
+.listItem span {
+    margin-left: 0.5em;
+}
+
+.listItem {
+    padding: 10px 35px;
+    margin-bottom: 12px;
+    font-size: 32px;
+    background: #ddd;
+}
+
+input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
 }
 
 #addTask {
@@ -74,21 +86,62 @@ body {
     height: 50px;
 }
 
+#addTask:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+#addTask:active {
+    transform: scale(0.9);
+    transition-duration: 300ms;
+}
 
 #addTaskWindow {
-    position: absolute;
+    position: fixed;
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    top: 50%;
-    left: 40%;
+    top: 30%;
+    left: 38%;
     height: 20%;
-    border: 1px solid black;
+    width: 20%;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 20px #000;
 }
 
-#buttons {
+#newTaskInput {
+    padding: 5px;
+    border: 1px solid #1470bb;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 4em;
+}
+
+#buttonSection {
     display: flex;
     justify-content: space-between;
+}
+
+#buttonSection button {
+    padding: 0.7em;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #1470bb;
+}
+
+#buttonSection button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 2px 2px black;
+    transition-duration: 300ms;
+}
+
+#buttonSection button:active {
+    transform: scale(0.9);
 }

@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
 
         <h2>TODO LIST</h2>
+
         <div class="input_div">
             <div class="inputarea">
                 <input id="searchTask" type="text" placeholder="Search note..."></input>
@@ -20,23 +21,14 @@
             <div class="modeToogle"><img src="" /></div>
         </div>
 
-        <div id="taskList">
-            <div class="listItems">
-                <input type="checkbox"></input>
-                <p>Task1</p>
-            </div>
-             <div class="listItems">
-                <input type="checkbox"></input>
-                <p>Task1</p>
-            </div>
-        </div>
+        <div id="taskList"></div>
 
         <img id="addTask" onclick="addWindowToggle()" src="./icons/plus (1).png" />
     </div>
 
     <div id="addTaskWindow">
         <input id="newTaskInput" type="text" placeholder="Input your note..."></input>
-        <div id="buttons">
+        <div id="buttonSection">
             <button onclick="cancel()">Cancel</button>
             <button onclick="addTaskButton()">Apply</button>
         </div>
