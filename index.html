@@ -8,7 +8,7 @@
     <title>To-Do List</title>
 </head>
 
-<body>
+<body class="">
     <div class="main" id="main">
 
         <h2>TODO LIST</h2>
@@ -18,7 +18,7 @@
                 <input id="searchTask" type="text" placeholder="Search note..."></input>
                 <img src="./icons/search.png" />
             </div>
-            <div class="modeToogle"><img src="" /></div>
+            <div class="modeToogle" id="modeToogle" onclick="modeChange()"><img src="./icons/moon.png" height="50" id="modeImg"></div>
         </div>
 
         <div id="taskList"></div>

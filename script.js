@@ -28,7 +28,7 @@ function addTaskButton() {
         alert('Please enter task');
     } else {
         var template = '<div class="listItem">' +
-            '<input type="checkbox" onChange="isChecked()" id="checkbox"></input>' + '<span id="value">' + value + '<span/>' +
+            '<input type="checkbox"  id="checkbox"></input>' + '<span id="value">' + value + '<span/>' +
             '</div>';
         //to add task in list
         document.getElementById('taskList').innerHTML += template;
@@ -40,7 +40,7 @@ function addTaskButton() {
     }
 }
 
-//To chcked checkbox and checnge the text decoration accordingly
+//To check checkbox and change the text decoration accordingly
 function isChecked() {
     let toCheck = document.getElementById('checkbox').checked;
     let taskCompleted = document.getElementById('value');
@@ -54,4 +54,24 @@ function isChecked() {
         taskCompleted.style.color = "#aaa";
     }
 
+}
+
+
+function modeChange() {
+    let mode = document.getElementById('modeToogle').innerHTML;
+    // let color = document.getElementsByClassName('dark-mode');
+
+
+    let dark = '<img src="./icons/moon.png" height="50" id="modeImg">'
+    let light = '<img src="./icons/sun_6064676.png" height="50" id="modeImg">'
+    //Toggle between modes
+    if (mode == dark) {
+        document.getElementById('modeToogle').innerHTML = light;
+
+
+    } else {
+        document.getElementById('modeToogle').innerHTML = dark;
+    }
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }

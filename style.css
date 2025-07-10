@@ -2,9 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    transition-duration: 0.5s;
 }
 
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+    transition-duration: 0.5;
+}
 
 .main {
     display: flex;
@@ -40,6 +45,7 @@ body {
     padding: 0;
     border: none;
     outline: none;
+    background: none;
 }
 
 .inputarea img:hover {
@@ -47,11 +53,10 @@ body {
 }
 
 .modeToogle {
-    background-color: #1470bb;
-    border-radius: 10%;
+    background-color: #ffffff;
+    border-radius: 50%;
     margin: 3%;
-    height: 100%px;
-    width: 60px;
+    height: 50px;
 }
 
 #taskList {
@@ -67,6 +72,7 @@ body {
     margin-bottom: 12px;
     font-size: 32px;
     background: #ddd;
+    border-radius: 10px;
 }
 
 input[type="checkbox"] {
